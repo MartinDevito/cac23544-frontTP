@@ -1,0 +1,156 @@
+/*navbvar*/
+
+.navbar-nav {
+    justify-content: right;
+    margin-right: 100px;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: right;
+    margin-left: 100px;
+}
+
+.navbar-nav .nav-link {
+    color: white; 
+    transition: color 0.3s; 
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #ffc107; 
+}
+
+.navbar-logo {
+    width: 120px;
+    height: auto; 
+}
+
+
+.navbar-text {
+    margin-left: auto;
+    margin-top: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.navbar-nav .nav-item:last-child .nav-link {
+    color: #16c244;
+}
+
+/* carousel */
+
+.carousel-item img {
+    max-height: 750px; /* Adjust the max height as needed */
+}
+
+
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    color: white;
+    text-align: right;
+    padding-left: 280px;
+}
+
+.carousel-caption h1 {
+    font-size: 50px;
+}
+
+.btn-invisible-bg {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-top: 50px;
+}
+
+.btn-green-bg {
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    margin-top: 50px;
+}
+
+/*principal*/
+
+.card-body.text-left {
+    text-align: left;
+}
+
+.card-button {
+    margin-top: 10px; /* Add spacing below the buttons */
+    font-size: 14px; /* Reduce the button text size */
+    padding: 2px 10px; /* Adjust padding for the buttons */
+}
+
+#img-final {
+    display: flex;
+    background-color: #333; /* Fondo gris oscuro */
+    color: white; /* Texto en blanco */
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#img-final img {
+    max-width: 50%; /* La imagen ocupará la mitad del espacio a la izquierda */
+    margin: 0; /* Quitamos el margen de la imagen */
+}
+
+#img-final div {
+    flex: 1; /* El texto ocupará todo el espacio restante a la derecha */
+    text-align: left; /* Alineamos el texto a la izquierda */
+    padding: 20px;
+}
+
+#img-final h6 {
+font-size: 17px;
+font-weight: 300;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+h5 span {
+    text-decoration: underline dotted; /* Subrayado con puntos */
+}
+
+/*form*/
+
+.btn-custom {
+    background-color: #1c8d1c; /* Cambia esto al color verde claro que desees */
+    color: #fff; /* Cambia el color del texto si es necesario */
+    /* Ajusta la altura del botón */
+    height: 50px; /* Cambia la altura según tus preferencias */
+    /* Puedes agregar otros estilos personalizados según tus preferencias */
+}
+
+/* Estilo personalizado para alinear el texto a la izquierda */
+.text-custom {
+    text-align: left;
+    /* Puedes agregar otros estilos personalizados según tus preferencias */
+}
+
+.bg-celeste-oscuro {
+    background-color: #007BFF; /* Puedes cambiar este valor al tono de celeste oscuro que desees */
+}
