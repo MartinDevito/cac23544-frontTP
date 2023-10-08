@@ -2,12 +2,12 @@
 
 .navbar-nav {
     justify-content: right;
-    margin-right: 100px;
-    font-size: 18px;
+    margin-right: 90px;
+    font-size: 16px;
 }
 
 .navbar-nav .nav-item {
-    margin: 0 15px;
+    margin: 0 1px;
 }
 
 .navbar-brand {
@@ -34,7 +34,7 @@
 .navbar-text {
     margin-left: auto;
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 
@@ -45,7 +45,7 @@
 /* carousel */
 
 .carousel-item img {
-    max-height: 750px; /* Adjust the max height as needed */
+    max-height: 600px; /* Adjust the max height as needed */
 }
 
 
@@ -63,20 +63,23 @@
     padding: 0px;
     color: white;
     text-align: right;
-    padding-left: 280px;
+    padding-left: 10px;
 }
-
+/*Tamaños y tipos de texto para carousel*/
 .carousel-caption h1 {
-    font-size: 50px;
+    font-size: 30px;
 }
-
+h6 {
+    font-weight: normal;
+}
+/*Boton invisible Quiero ser un orador*/
 .btn-invisible-bg {
     background-color: transparent;
     border: 1px solid white;
     color: white;
     margin-top: 50px;
 }
-
+/*Boton verde Comprar Tiokets*/
 .btn-green-bg {
     background-color: #28a745;
     border: none;
@@ -91,34 +94,34 @@
 }
 
 .card-button {
-    margin-top: 10px; /* Add spacing below the buttons */
-    font-size: 14px; /* Reduce the button text size */
-    padding: 2px 10px; /* Adjust padding for the buttons */
+    margin-top: 10px; 
+    font-size: 14px; 
+    padding: 2px 10px; 
 }
 
 #img-final {
     display: flex;
-    background-color: #333; /* Fondo gris oscuro */
-    color: white; /* Texto en blanco */
+    background-color: #333; 
+    color: white; 
     padding: 0px;
     margin-top: 10px;
     margin-bottom: 30px;
 }
 
 #img-final img {
-    max-width: 50%; /* La imagen ocupará la mitad del espacio a la izquierda */
-    margin: 0; /* Quitamos el margen de la imagen */
+    max-width: 50%; 
+    margin: 0; 
 }
 
 #img-final div {
-    flex: 1; /* El texto ocupará todo el espacio restante a la derecha */
-    text-align: left; /* Alineamos el texto a la izquierda */
-    padding: 20px;
+    flex: 1; 
+    text-align: left; 
+    padding: 15px;
 }
 
 #img-final h6 {
-font-size: 17px;
-font-weight: 300;
+font-size: 14px;
+font-weight: 400;
 }
 
 button {
@@ -130,18 +133,24 @@ button {
     margin-top: 15px;
     border-radius: 5px;
 }
-
+/* Subrayado con puntos en CHARLA IGNITE*/
 h5 span {
-    text-decoration: underline dotted; /* Subrayado con puntos */
+    text-decoration: underline dotted; 
 }
 
 /*form*/
 
+form {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 .btn-custom {
-    background-color: #1c8d1c; /* Cambia esto al color verde claro que desees */
+    background-color: #a5d16b; /* Cambia esto al color verde claro que desees */
     color: #fff; /* Cambia el color del texto si es necesario */
     /* Ajusta la altura del botón */
-    height: 50px; /* Cambia la altura según tus preferencias */
+    width: 1%; /* Cambia la altura según tus preferencias */
     /* Puedes agregar otros estilos personalizados según tus preferencias */
 }
 
@@ -152,5 +161,5 @@ h5 span {
 }
 
 .bg-celeste-oscuro {
-    background-color: #007BFF; /* Puedes cambiar este valor al tono de celeste oscuro que desees */
+    background-color: #0c485f; /* Puedes cambiar este valor al tono de celeste oscuro que desees */
 }
