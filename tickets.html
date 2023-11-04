@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" style="background-color: #3b3b3b;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <!-- Reemplaza "index.html" con la URL de tu página principal -->
+                <img class="navbar-logo" src="./assets/codoacodo.png" alt="">
+                <span class="navbar-text">Conf Bs As</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Conviertete en orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tickets.html">Comprar tickets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="backround">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="recuadro form-control" style="border: 2px solid #002fff;">
+                        <p style="font-weight: bold; font-size: 18px;">Estudiante</p>
+                        <p>Tiene un descuento</p>
+                        <p style="font-weight: bold; font-size: 18px;">80%</p>
+                        <p>*Presentar documentación</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="recuadro form-control" style="border: 2px solid #00b7ff;">
+                        <p style="font-weight: bold; font-size: 18px;">Trainee</p>
+                        <p>Tiene un descuento</p>
+                        <p style="font-weight: bold; font-size: 18px;">50%</p>
+                        <p>*Presentar documentación</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="recuadro form-control" style="border: 2px solid #ffaa00;">
+                        <p style="font-weight: bold; font-size: 18px;">Junior</p>
+                        <p>Tiene un descuento</p>
+                        <p style="font-weight: bold; font-size: 18px;">15%</p>
+                        <p>*Presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="tarjetas" class="text-center">
+
+            <div class="container">
+                <div id="formulario" class="text-center">
+                    <h6 style="font-size: 13px;">VENTA </h6>
+                    <h2> VALOR DEL TICKET $200</h2>
+
+                    <form>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="correo" placeholder="Correo">
+                                </div>
+                            </div>
+                            <p id="error-correo" class="text-danger"></p> <!-- Elemento para mostrar el mensaje de error -->
+                        </div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <h6 class="text-start">Cantidad</h6>
+                                    <input type="text" class="form-control" id="cantidad" placeholder="Cantidad">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <h6 class="text-start">Categoría</h6>
+                                    <select class="form-select" id="categoria" name="categoria">
+                                        <option value="estudiante">Estudiante</option>
+                                        <option value="trainee">Trainee</option>
+                                        <option value="junior">Junior</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control custom-bg" id="totalAPagar"
+                                        placeholder="Total a Pagar: $" readonly>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="button" id="borrar" class="btn btn-custom btn-block float-start"
+                                    style="width: 100%;">
+                                    Borrar
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" id="calcular" class="btn btn-custom btn-block float-end"
+                                    style="width: 100%;">
+                                    Resumen
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.getElementById('calcular').addEventListener('click', function() {
+                        var categoria = document.getElementById('categoria').value;
+                        var cantidadTickets = parseInt(document.getElementById('cantidad').value);
+                        var precioUnitario = 200; // Precio unitario de $200
+            
+                        var correo = document.getElementById('correo').value;
+            
+                        // Validar el campo de correo
+                        var errorCorreo = document.getElementById('error-correo'); // Elemento de mensaje de error
+            
+                        if (correo.indexOf('@') === -1 || correo.indexOf('.') === -1) {
+                            errorCorreo.textContent = 'Error: Ingresa una dirección de correo válida.';
+                            errorCorreo.style.display = 'block'; // Mostrar el mensaje de error
+                            return; // Sal del proceso si la validación falla
+                        } else {
+                            errorCorreo.style.display = 'none'; // Ocultar el mensaje de error si la validación es exitosa
+                        }
+                        switch (categoria) {
+                            case 'estudiante':
+                                precioUnitario *= 0.2; // Aplicar el 80% de descuento
+                                break;
+                            case 'trainee':
+                                precioUnitario *= 0.5; // Aplicar el 50% de descuento
+                                break;
+                            case 'junior':
+                                precioUnitario *= 0.85; // Aplicar el 15% de descuento
+                                break;
+                            default:
+                                precioUnitario = 0;
+                        }
+
+                        var totalAPagar = cantidadTickets * precioUnitario;
+
+                        document.getElementById('totalAPagar').value = 'Total a Pagar: $' + totalAPagar.toFixed(2);
+                    });
+
+                    // Agregar evento para el botón "Borrar"
+                    document.getElementById('borrar').addEventListener('click', function () {
+                        document.getElementById('nombre').value = '';
+                        document.getElementById('apellido').value = '';
+                        document.getElementById('correo').value = '';
+                        document.getElementById('cantidad').value = '';
+                        document.getElementById('categoria').value = 'estudiante'; // O establece el valor por defecto
+                        document.getElementById('totalAPagar').value = 'Total a Pagar: $';
+                    });
+                });
+            </script>
+        </div>
+    </div>
+
+    <footer class="gradient-footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="#" class="text-light text-decoration-none">Preguntas frecuentes</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-light text-decoration-none">Contáctanos</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-light text-decoration-none">Prensa</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-light text-decoration-none">Conferencias</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-light text-decoration-none">Términos y condiciones</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-light text-decoration-none">Privacidad</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-light text-decoration-none">Estudiantes</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
